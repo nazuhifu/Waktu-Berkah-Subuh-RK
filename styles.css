@@ -3,6 +3,16 @@
     src: url("assets/fonts/KFGQPCUthmanicScriptHAFSRegular.otf");
 }
 
+@media only screen and (max-width: 768px) {
+    .zikir-block {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 45px;
+        margin: 0px auto 0px auto;
+    }
+}
+
 /* Default Light Mode Styles */
 body {
     margin: 0;
@@ -53,7 +63,7 @@ header {
 .nav-links a {
     color: #333;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3vh;
     padding: 10px;
     border-radius: 4px;
     transition: color 0.2s ease-in;
@@ -82,7 +92,7 @@ header {
 }
 
 .logo span {
-    font-size: 25px;
+    font-size: 3.5vh;
     color: #333;
     transition: color 0.2s ease-in;
 }
@@ -151,6 +161,47 @@ main {
 .text-translate {
     padding-top: 25px;
     font-size: 1.2vw;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 30px; */
+    /* background-color: #fff; */
+    background-color: #014a59;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 50px;
+}
+
+.footer-heart {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-heart a {
+    border-bottom: 1px solid #453886;
+    color: #453886;
+    padding-bottom: 0.25em;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: #2196f3;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: 0.3em;
+    text-decoration: none;
+}
+
+.emoji {
+    vertical-align: middle;
 }
 
 /* Dark Mode Styles */
