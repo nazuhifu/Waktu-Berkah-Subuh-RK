@@ -7,54 +7,70 @@
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .nav-links {
-        width: 100%;
         justify-content: center;
     }
 
+    .nav-links {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .nav-links li {
-        margin: 10px 0;
+        font-size: 3vw;
+    }
+
+    .nav-links li a {
+        font-size: 3vw;
+    }
+
+    .navbar button {
+        display: inline-block;
     }
 
     .logo {
         justify-content: center;
-        margin-bottom: 10px;
+        margin: auto;
+        font-size: 3vw;
+    }
+
+    .logo img {
+        height: 2vw;
+    }
+
+    .logo span {
+        font-size: 3vw;
+    }
+
+    .text-quran {
+        font-size: 8vw;
+    }
+
+    .taawudz {
+        font-size: 6vw;
+    }
+
+    .taawudz-translate {
+        font-size: 3vw;
     }
 
     .content {
-        width: 80%;
-    }
-
-    .zikir-block {
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
         padding-bottom: 45px;
-        margin: 0px auto 0px auto;
-    }
-
-    body {
-        font-size: 14px; /* Smaller base font size on small screens */
-    }
-
-    h1 {
-        font-size: 2rem; /* Adjust heading sizes */
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.875rem; /* Adjust paragraph text size */
+        margin: auto auto 0px auto;
     }
 }
 
 /* Default Light Mode Styles */
 body {
     margin: 0;
+    margin-top: 0px;
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
@@ -79,6 +95,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    z-index: 1000;
 }
 
 .navbar button {
@@ -96,13 +113,13 @@ header {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin: 10px;
 }
 
 .nav-links a {
     color: #333;
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 20px;
     padding: 10px;
     border-radius: 4px;
     transition: color 0.2s ease-in;
@@ -131,9 +148,16 @@ header {
 }
 
 .logo span {
-    font-size: 3.5vh;
+    font-size: 25px;
     color: #333;
     transition: color 0.2s ease-in;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 
 main {
@@ -160,14 +184,14 @@ main {
 }
 
 .taawudz {
-    font-size: 3vw;
+    font-size: 40px;
     margin-top: 0px;
     margin-bottom: 10px;
     font-family: "UthmaniFont", serif;
 }
 
 .taawudz-translate {
-    font-size: 1.2vw;
+    font-size: 18px;
 }
 
 .zikir-block {
@@ -190,7 +214,7 @@ main {
 
 .text-quran {
     font-family: "UthmaniFont";
-    font-size: 3vw;
+    font-size: 40px;
 }
 
 .text-justify {
@@ -199,7 +223,7 @@ main {
 
 .text-translate {
     padding-top: 25px;
-    font-size: 1.2vw;
+    font-size: 18px;
 }
 
 .footer {
