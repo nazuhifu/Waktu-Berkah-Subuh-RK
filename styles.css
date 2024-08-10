@@ -1,248 +1,165 @@
+/* Default Light Mode Styles */
 @font-face {
     font-family: UthmaniFont;
     src: url("assets/fonts/KFGQPCUthmanicScriptHAFSRegular.otf");
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .nav-links {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        font-size: 3vw;
-    }
-
-    .nav-links li a {
-        font-size: 3vw;
-    }
-
-    .navbar button {
-        display: inline-block;
-    }
-
-    .logo {
-        justify-content: center;
-        margin: auto;
-        font-size: 3vw;
-    }
-
-    .logo img {
-        height: 2vw;
-    }
-
-    .logo span {
-        font-size: 3vw;
-    }
-
-    .text-quran {
-        font-size: 8vw;
-    }
-
-    .taawudz {
-        font-size: 6vw;
-    }
-
-    .taawudz-translate {
-        font-size: 3vw;
-    }
-
-    .content {
-        width: 100%;
-        padding-right: 5px;
-        padding-left: 5px;
-        padding-bottom: 45px;
-        margin: auto auto 0px auto;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Default Light Mode Styles */
 body {
-    margin: 0;
-    margin-top: 0px;
-    font-family: "Poppins", Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
 }
 
 header {
     width: 100%;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
-    color: #333;
-    padding: 15px 0;
+    background-color: #f8fafd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
 .navbar {
+    width: 95%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    z-index: 1000;
-}
-
-.navbar button {
-    all: unset;
-    cursor: pointer;
-    padding-left: 20px;
-    transition: background 0.2s ease-in;
-}
-
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 10px;
-}
-
-.nav-links a {
-    color: #333;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 4px;
-    transition: color 0.2s ease-in;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #007bff;
-    transition: background 0.2s ease-in;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: auto; /* Pushes the logo to the far right */
-    text-align: center;
     text-decoration: none;
 }
 
 .logo img {
-    height: 40px; /* Adjust based on your logo's size */
+    height: 50px;
     width: auto;
-    margin-right: 20px; /* Space between logo and text */
+    margin-right: 20px;
 }
 
 .logo span {
-    font-size: 25px;
+    font-size: 1.2rem;
     color: #333;
     transition: color 0.2s ease-in;
 }
 
-.checkbtn {
-    font-size: 30px;
-    color: white;
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #007bff;
+}
+
+.nav-links .dark-mode-btn button {
+    background: none;
+    border: none;
     cursor: pointer;
-    display: none;
+    padding: 0.5em;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-links .dark-mode-btn button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-links .dark-mode-btn button svg:hover {
+    fill: #007bff;
 }
 
 main {
-    margin-top: 60px; /* Add margin to avoid overlap with fixed navbar */
+    margin-top: 15vh;
+    margin-bottom: 10vh;
     background-color: white;
+    color: #333;
 }
 
-#header {
-    background-color: white;
+main .mobileNav {
+    display: none;
+}
+
+main .mobileNav .nav-block {
+    display: none;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin: 1em;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    color: #333;
 }
 
 .content {
-    background-color: white;
-    color: #333;
-    padding-top: 25px;
-    padding-bottom: 50px;
     text-align: center;
     width: 55%;
-    margin: 0px auto 0px auto;
+    margin: 5vh auto 0px auto;
 }
 
-.taawudz {
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-family: "UthmaniFont", serif;
+.content .ayat-block {
+    margin: 5vh 0vh;
 }
 
-.taawudz-translate {
-    font-size: 18px;
+.content .ayat {
+    text-align: justify;
+    font-family: "UthmaniFont";
+    font-size: 2.5rem;
+    margin-bottom: 4vh;
 }
 
-.zikir-block {
-    padding-top: 40px;
+.content .ayat-translate {
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
 .title {
     display: table;
-    margin: 0px auto 0px auto;
+    margin: 0vh auto 2vh auto;
     padding: 7px;
-    font-size: 13px;
+    font-size: 0.8rem;
     background-color: #007bff;
     color: #ffffff;
     border-radius: 5px;
 }
 
-.title-block {
-    padding-bottom: 20px;
-}
-
-.text-quran {
-    font-family: "UthmaniFont";
-    font-size: 40px;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-translate {
-    padding-top: 25px;
-    font-size: 18px;
-}
-
-.footer {
-    position: fixed;
+footer {
+    position: static;
     left: 0;
     bottom: 0;
+    font-size: 1rem;
     width: 100%;
-    /* height: 30px; */
-    /* background-color: #fff; */
-    background-color: #014a59;
-    color: white;
+    height: 10vh;
     text-align: center;
-    font-size: 10px;
-    margin-top: 50px;
-}
-
-.footer-heart {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8fafd;
+    color: #333;
 }
 
 .footer-heart a {
@@ -267,30 +184,16 @@ main {
     vertical-align: middle;
 }
 
-/* Dark Mode Styles */
-.dark-mode {
+header.dark-mode {
     background-color: #1e1e1e;
-    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 body.dark-mode {
     background-color: #121212;
-    color: #e0e0e0;
 }
 
-header.dark-mode {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-#header.dark-mode {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-}
-
-.head.dark-mode {
-    background-color: #1e1e1e;
+.logo span.dark-mode {
     color: #e0e0e0;
 }
 
@@ -301,23 +204,119 @@ header.dark-mode {
 .nav-links a.dark-mode:hover,
 .nav-links a.dark-mode:focus {
     background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-.logo span.dark-mode {
     color: #e0e0e0;
 }
 
-.content.dark-mode {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+.nav-links .dark-mode-btn button svg.dark-mode {
+    fill: #e0e0e070;
 }
 
-.taawudz.dark-mode {
-    color: #e0e0e0;
+.nav-links .dark-mode-btn button svg.dark-mode:hover {
+    fill: #e0e0e0;
 }
 
-.title-block.dark-mode .title {
+.nav-links .dark-mode-btn button.dark-mode:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main .mobileNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .mobileNav .title-block {
+    padding: 0vh 3vh;
+}
+
+main.dark-mode {
+    color: #e0e0e0;
+    background-color: #121212;
+}
+
+.content .title.dark-mode {
     background-color: #caa1fc;
     color: #121212;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: #f8fafd;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding: 15px 20px;
+        display: block;
+    }
+
+    .dark-mode-btn {
+        padding: 10px 10px;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    main .mobileNav .nav-block {
+        position: static;
+        display: block;
+        margin: 0vh 3vh 2vh 3vh;
+        padding: 10px 30px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
+    main h1 {
+        font-size: 1.6rem;
+        margin: 1em;
+    }
+
+    .content {
+        text-align: center;
+        width: 90%;
+        margin: 5vh auto 0px auto;
+    }
+
+    .content .ayat {
+        font-size: 2rem;
+        margin-bottom: 4vh;
+    }
+
+    .content .ayat-translate {
+        font-size: 0.9rem;
+    }
+
+    .title {
+        display: table;
+        margin: 0vh auto 2vh auto;
+        padding: 7px;
+        font-size: 0.7rem;
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }
