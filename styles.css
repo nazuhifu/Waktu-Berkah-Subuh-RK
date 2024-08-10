@@ -240,29 +240,11 @@ main.dark-mode {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links {
+    .nav-links .nav-items {
         display: none;
-        position: absolute;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        background-color: #f8fafd;
-        flex-direction: column;
-        align-items: flex-start;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav-links a {
-        padding: 15px 20px;
+    .nav-links .dark-mode-btn {
         display: block;
     }
 
@@ -298,7 +280,7 @@ main.dark-mode {
     }
 
     .content .ayat {
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin-bottom: 4vh;
     }
 
