@@ -128,7 +128,7 @@ main h1 {
 .content .ayat {
     text-align: justify;
     font-family: "UthmaniFont";
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 4vh;
 }
 
@@ -185,12 +185,12 @@ footer {
 }
 
 header.dark-mode {
-    background-color: #1e1e1e;
+    background-color: #1f2633;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 body.dark-mode {
-    background-color: #121212;
+    background-color: #27313f;
 }
 
 .logo span.dark-mode {
@@ -230,13 +230,13 @@ main .mobileNav .title-block {
 }
 
 main.dark-mode {
-    color: #e0e0e0;
-    background-color: #121212;
+    color: #e1e5ea;
+    background-color: #27313f;
 }
 
 .content .title.dark-mode {
     background-color: #caa1fc;
-    color: #121212;
+    color: #27313f;
 }
 
 @media screen and (max-width: 768px) {
